@@ -4,26 +4,26 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Portfolio · Gautham Rajendiran</title>
+    <title> Gautham's Portfolio </title>
+    <!--Style Sheet-->
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <!--Scripts-->
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Clicker+Script|Lato">
+    <!--FontAwesome Icons-->
+    <script src="https://kit.fontawesome.com/dd9b67b70e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <ul>
-            <li> Home </li>
-            <li> About </li>
-            <li> Contact </li>
-            <li> Projects  </li>
-          </ul>
-        </nav>
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
-    </header>
+    <!--Navbar-Sit on top-->
+    <div class="top">
+      <div class="bar" id="myNavbar">
+        <i class="fas fa-home"></i><%= link "Home", to: Routes.page_path(@conn, :index) %>
+        <i class="fa fa-user"></i><%= link "About", to: Routes.page_path(@conn, :about) %>
+        <i class="far fa-address-card"></i><%= link "Contact", to: Routes.page_path(@conn, :contact) %>
+        <i class="fas fa-briefcase"></i> <%= link "Projects", to: Routes.page_path(@conn, :projects) %>
+      </div>
+    </div>
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
