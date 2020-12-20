@@ -1,2 +1,8 @@
-
-I'm Gautham, If you are famailiar with "Gotham City" then you know how to call me!
+<div class='jumbotron mt-2 bg-white text-center'>
+  <div class='container'>
+  <h1 class="hello-world"> HELLO, WORLD<span class="blink_me">_</span> </h1>
+    <p class="display-4 lead">I'm Gautham Rajendiran.</p>
+    <p class="text-muted display-5 lead"> DATA | BI | SOFTWARE ENGINEER </p>
+    <%= link "More about me", to: Routes.page_path(@conn, :about), class: "btn btn-lg btn-outline-dark m-4" %>
+  </div>
+</div>

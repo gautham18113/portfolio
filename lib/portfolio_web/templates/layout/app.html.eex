@@ -4,11 +4,11 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title> Gautham's Portfolio </title>
+    <title> Gautham | Portfolio  </title>
     <!--Style Sheet-->
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <!--Scripts-->
-    <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <script defer type="text/javascript" src="<%= Routes.static_url(@conn, "/js/app.js") %>"></script>
     <!--Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Clicker+Script|Lato">
     <!--FontAwesome Icons-->
@@ -16,18 +16,31 @@
   </head>
   <body>
     <!--Navbar-Sit on top-->
-    <div class="top">
-      <div class="bar" id="myNavbar">
-        <i class="fas fa-home"></i><%= link "Home", to: Routes.page_path(@conn, :index) %>
-        <i class="fa fa-user"></i><%= link "About", to: Routes.page_path(@conn, :about) %>
-        <i class="far fa-address-card"></i><%= link "Contact", to: Routes.page_path(@conn, :contact) %>
-        <i class="fas fa-briefcase"></i> <%= link "Projects", to: Routes.page_path(@conn, :projects) %>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light shadow-sm" id="mainNavBar">
+      <div class="container p-2">
+        <span class="navbar-brand h4"> Gautham Ram Rajendiran </span>
+        <ul class="navbar-nav ml-auto"> 
+          <li class="nav-item"><%= link to: Routes.page_path(@conn, :index), class: "nav-link" do %><i class="fas fa-home pr-2"></i>Home<% end %></li>
+          <li class="nav-item"><%= link to: Routes.page_path(@conn, :about), class: "nav-link" do %><i class="fa fa-user pr-2"></i>About<% end %></li>
+          <li class="nav-item"><%= link to: Routes.page_path(@conn, :contact), class: "nav-link disabled" do %><i class="far fa-address-card pr-2"></i>Contact<% end %></li>
+          <li class="nav-item"><%= link to: Routes.page_path(@conn, :projects), class: "nav-link disabled" do %><i class="fas fa-briefcase pr-2"></i>Projects<% end %></li>
+        </ul>
       </div>
-    </div>
+    </nav>
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= @inner_content %>
     </main>
+  <div class="container">
+    <div class="fixed-bottom bg-dark d-flex">
+      <br />
+      <a href="https://github.com/gautham18113"><i class="fab fa-github fa-2x social m-2 p-3 text-white"></i></a>
+      <a href="https://www.linkedin.com/in/gautham-91/"><i class="fab fa-linkedin-in fa-2x social m-2 p-3 text-white"></i></a>
+      <a href="mailto:gauthamram.rajendran@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-2x social m-2 p-3 text-white"></i></a>
+      <a href="/" class="ml-auto m-2 p-3 text-white">www.grajendiran.com</a>
+    </div>
+    </div>
+  </div>
   </body>
 </html>

@@ -1,0 +1,32 @@
+.nav {
+	overflow: hidden;
+	background-color: #eae8e4; 
+	border-radius: 12px;
+}
+
+.nav a {
+	float: left;
+	color: #2f3b39;
+	text-align: center;
+	padding: 35px 45px;
+	text-decoration: none;
+}
+
+.nav a:link {
+  color: red;
+}
+
+.nav a:hover {
+	background-color: #c4b5a4;
+}
+
+.nav i {
+	padding: 4px 4px;
+}
+
+.nav text {
+	float:right;
+	text-align: center;
+	padding: 35px 45px;
+}
+
