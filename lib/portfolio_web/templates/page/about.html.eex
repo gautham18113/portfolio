@@ -50,7 +50,7 @@
   <hr>
   <div id="accordion">
     <div class="card border-0 m-2">
-      <div class="card-header bg-white border-0 m-2" id="workEx">
+      <div class="card-header text-center bg-white border-0 m-2" id="workEx">
         <h5 class="mb-0">
           <button class="btn btn-link text-dark shadow-none border-0" data-toggle="collapse" data-target="#work-ex" aria-expanded="false" aria-controls="work-ex">
             <i class="fas fa-laptop-code fa-2x  mr-2"></i><span class="h4"> Work Experience </span>
@@ -144,7 +144,7 @@
         </div>
       </div>
       <hr>
-      <div class="card-header bg-white border-0 m-2" id="education">
+      <div class="card-header text-center bg-white border-0 m-2" id="education">
         <h5 class="mb-0">
           <button class="btn btn-link text-dark shadow-none border-0" data-toggle="collapse" data-target="#edu" aria-expanded="false" aria-controls="collapseTwo">
             <i class="fas fa-university fa-2x mr-2"></i><span class="h4"> Education </span>
