@@ -17,4 +17,3 @@ import "bootstrap"; // Bootstrap support
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
-

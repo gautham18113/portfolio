@@ -1,5 +1,181 @@
-<h1> Welcome to my Portfolio! </h1>
-<h2> About Me </h2>
+<div class="jumbotron bg-white">
+  <div class="container bg-white d-flex-column">
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="h4 p-2"> Intro </div>
+        <p class="lead p-2">
+        Gautham has been working in the data engineering space for the past 6 years.<br />
+        Over these years he has accumulated technical and managerial experience through building teams up from scratch. <br />
+        He specializes in building data platforms, data intensive BI applications and enterprise data warehouses. <br />
+        <hr>
+        <address>
+          <div class="h4 p-2">Get in touch</div>
+          <i class="fas fa-mobile-alt m-2"></i> (503)-327-5122<br />
+          <i class="fas fa-map-marker-alt m-2"></i> 94568, CA <br />
+          <i class="fas fa-at m-2"></i>gauthamram.rajendran@gmail.com<br />
+        <address>
+        </p >
+      </div>
+      <div class="col p-2">
+        <h5 class="h4 p-2"> Core Skills </h5>
+        <div class="p-2"><i class="fas fa-tools pr-2"></i>Data Engineering and Data modeling</div>
+        <div class="progress bg-light rounded-0 shadow-none m-2" style="height: 25px;">
+          <div class="progress-bar bg-secondary" style="width: 95%;" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
 
+        <div class="p-2"><i class="fas fa-tools pr-2"></i>Big Data and Streaming technologies</div>
+        <div class="progress bg-light rounded-0 shadow-none m-2" style="height: 25px;">
+          <div class="progress-bar bg-secondary" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
 
+        <div class="p-2"><i class="fas fa-chart-line pr-2"></i>Data Science, Reporting and Analytics</div>
+        <div class="progress bg-light rounded-0 shadow-none m-2" style="height: 25px;">
+          <div class="progress-bar  bg-secondary" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
 
+        <div class="p-2"><i class="fas fa-user-friends pr-2"></i>Team Management</div>
+        <div class="progress bg-light rounded-0 shadow-none m-2" style="height: 25px;">
+          <div class="progress-bar bg-secondary" style="width: 80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <div class="p-2"><i class="fas fa-cogs pr-2"></i>DevOps</div>
+        <div class="progress bg-light rounded-0 shadow-none m-2" style="height: 25px;">
+          <div class="progress-bar bg-secondary" style="width: 75%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+    </div>
+    </div>
+  </div>
+  <hr>
+  <div id="accordion">
+    <div class="card border-0 m-2">
+      <div class="card-header bg-white border-0 m-2" id="workEx">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-dark shadow-none border-0" data-toggle="collapse" data-target="#work-ex" aria-expanded="false" aria-controls="work-ex">
+            <i class="fas fa-laptop-code fa-2x  mr-2"></i><span class="h4"> Work Experience </span>
+          </button>
+        </h5>
+      </div>
+      <div class="collapse" data-parent="#accordion" aria-labelledby="workEx" id="work-ex">
+        <div class="row m-4">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action bg-light text-dark border-secondary" id="list-pepsico-list" data-toggle="list" href="#list-pepsico" role="tab" aria-controls="pepsico">Pepsico</a>
+              <a class="list-group-item bg-light text-dark border-secondary list-group-item-action" id="list-dnvgl-list" data-toggle="list" href="#list-dnvgl" role="tab" aria-controls="dnvgl">DNV GL</a>
+              <a class="list-group-item bg-light text-dark border-secondary list-group-item-action" id="list-cts-list" data-toggle="list" href="#list-cts" role="tab" aria-controls="cts">Cognizant Technology Solutions</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade" id="list-pepsico" role="tabpanel" aria-labelledby="list-pepsico-list">
+                <div class="h3"> Data Engineer <span class="h5 text-secondary">July 2018 - Current</span></div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item lead"> 
+                    Increased online sales revenue by 14% using near real-time reports that sent alerts for
+                    changes in product placement across 40 different vendor websites.
+                  </li>
+                  <li class="list-group-item lead">
+                    Created a self service BI solution using Multidimensional OLAP cubes which simplified and
+                    improved the quality of data exploration for business users.
+                  </li>
+                  <li class="list-group-item lead">
+                    Led the effort to transition the data warehouse from an on-premise SQL Server to
+                    Snowflake.
+                  </li>
+                  <li class="list-group-item lead">
+                    Led a team of 4 for the Product Retail Observatory project which tracked product prices across 10 different vendors in real time.
+                  </li>
+                  <li class="list-group-item lead">
+                    Implemented 70+ ETL pipelines with Airflow and built associated hooks and operators.
+                  </li>
+                  <li class="list-group-item lead">
+                    Developed a config driven approach to data model deployment using DBT and datavault
+                    which reduced report turn-around time by 60%.
+                  </li>
+                  <li class="list-group-item lead">
+                    Mentored 6 new team members in airflow, snowflake and argo and documented the end to
+                    end process which standardized onboarding to 2 weeks.
+                  </li>
+                  <li class="list-group-item lead">
+                    Setup version control of the database schema using Alembic for improved auditability.
+                  </li>
+                  <li class="list-group-item lead">
+                    Setup databases, schemas,security roles and access control lists for the Snowflake database server.
+                  </li>
+        
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="list-dnvgl" role="tabpanel" aria-labelledby="list-dnvgl-list">
+                <div class="h3"> Data Science Intern <span class="h5 text-secondary">July 2017 - May 2018 </span></div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item lead">
+                    Reduced document review time by 21% by implementing a NLP model which used text
+        tagging to extract essential data out of large text documents.
+                  </li>
+                  <li class="list-group-item lead">
+                    Created a pipeline that automated migrating 1.4 Terabytes of legacy files to SQL Server
+        which were critical for time series analysis.
+                  </li>
+                  <li class="list-group-item lead">
+                    Challenged the status quo by replacing manual workloads with automated ETL pipelines
+        and enabled ad-hoc data analysis.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="list-cts" role="tabpanel" aria-labelledby="list-cts-list">
+                <div class="h3"> Programmer Analyst <span class="h5 text-secondary">December 2013 - June 2016 </span></div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item lead">
+                    Created 20+ Tableau reports which provided key metrics for customer credit risk and
+        liquidity risk assessment.
+                  </li>
+                  <li class="list-group-item lead">
+                    Improved query performance by 19% by implementing partition schemes and analyzing
+        query plans.
+                  </li>
+                  <li class="list-group-item lead">
+                    Owned maintenance of the data warehouse and tableau reports.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="card-header bg-white border-0 m-2" id="education">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-dark shadow-none border-0" data-toggle="collapse" data-target="#edu" aria-expanded="false" aria-controls="collapseTwo">
+            <i class="fas fa-university fa-2x mr-2"></i><span class="h4"> Education </span>
+          </button>
+        </h5>
+      </div>
+      <div id="edu" class="collapse" aria-labelledby="education" data-parent="#accordion">
+        <div class="card-body d-flex">
+          <div class="card"> 
+            <div class="card-body">
+              <h5 class="card-title text-dark p-3">
+                University of Texas - Masters in Information Systems and Management
+              </h5>
+              <h6 class="card-subtitle mb-3 text-muted p-3">
+                August 2016 - May 2018 
+              </h6>
+            </div>
+          </div>
+          <div class="card"> 
+            <div class="card-body">
+              <h5 class="card-title text-dark p-3">
+                Anna University, India - Bachelor of Engineering in Mechanical Engineering
+              </h5>
+              <h6 class="card-subtitle mb-3 text-muted p-3">
+                August 2009 - May 2013
+              </h6>
+            </div>
+          </div>
+      </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>

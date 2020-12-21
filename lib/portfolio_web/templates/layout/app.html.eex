@@ -16,14 +16,13 @@
   </head>
   <body>
     <!--Navbar-Sit on top-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light shadow-sm" id="mainNavBar">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow-sm" id="mainNavBar">
       <div class="container p-2">
         <span class="navbar-brand h4"> Gautham Ram Rajendiran </span>
         <ul class="navbar-nav ml-auto"> 
           <li class="nav-item"><%= link to: Routes.page_path(@conn, :index), class: "nav-link" do %><i class="fas fa-home pr-2"></i>Home<% end %></li>
           <li class="nav-item"><%= link to: Routes.page_path(@conn, :about), class: "nav-link" do %><i class="fa fa-user pr-2"></i>About<% end %></li>
-          <li class="nav-item"><%= link to: Routes.page_path(@conn, :contact), class: "nav-link disabled" do %><i class="far fa-address-card pr-2"></i>Contact<% end %></li>
-          <li class="nav-item"><%= link to: Routes.page_path(@conn, :projects), class: "nav-link disabled" do %><i class="fas fa-briefcase pr-2"></i>Projects<% end %></li>
+          <li class="nav-item"><%= link to: Routes.page_path(@conn, :projects), class: "nav-link disabled" do %><i class="fas fa-palette pr-2"></i>Portfolio<% end %></li>
         </ul>
       </div>
     </nav>
